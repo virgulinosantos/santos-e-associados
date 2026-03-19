@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contrato de Prestação de Serviços Jurídicos – Braga Neto</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            font-family: 'Times New Roman', serif;
+            padding: 0;
+        }
+        .documento {
+            background-color: white;
+            color: black;
+            width: 210mm;
+            min-height: 297mm;
+            padding: 2cm 2cm 1.5cm 2cm;
+            margin: 0 auto;
+            text-align: justify;
+            line-height: 1.3;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            border: none;
+        }
+        .cabecalho {
+            text-align: center;
+            border-bottom: 1.5px solid #c5a059;
+            padding-bottom: 6px;
+            margin-bottom: 15px;
+            flex-shrink: 0;
+        }
+        .logo {
+            margin-bottom: -35px;
+        }
+        .logo img {
+            width: 160px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            border: none;
+        }
+        h1 {
+            margin: 0;
+            font-size: 18pt;
+            letter-spacing: 3px;
+            font-weight: 400;
+            color: #001f3f;
+            text-transform: uppercase;
+            font-family: 'Cinzel', serif;
+        }
+        h1 span {
+            color: #c5a059;
+        }
+        .subtitulo {
+            margin: 2px 0;
+            font-size: 8pt;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: #666;
+            font-weight: bold;
+        }
+        .info-escritorio {
+            margin-top: 3px;
+            font-size: 7pt;
+            color: #999;
+            letter-spacing: 1px;
+            font-weight: bold;
+        }
+        .titulo-documento {
+            text-align: center;
+            margin-bottom: 20px;
+            flex-shrink: 0;
+        }
+        .titulo-documento span {
+            font-size: 12pt;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            border-bottom: 2px solid black;
+            padding-bottom: 2px;
+        }
+        .corpo {
+            font-size: 10pt;
+            color: black;
+            flex-grow: 1;
+        }
+        .corpo p {
+            margin: 0 0 4px 0;
+            text-indent: 1cm;
+        }
+        .corpo p.sem-recuo {
+            text-indent: 0;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        .numeracao {
+            margin-left: 1cm;
+            text-indent: 0;
+        }
+        .data-final {
+            text-align: center;
+            margin: 20px 0 15px 0;
+            font-size: 10pt;
+        }
+        .data-final p {
+            margin: 2px 0;
+            text-indent: 0;
+        }
+        .assinatura-area {
+            width: 280px;
+            margin: 5px auto 15px;
+            text-align: center;
+            flex-shrink: 0;
+        }
+        .assinatura-container {
+            position: relative;
+            height: 50px; /* aumentado para dar espaço */
+            width: 100%;
+            display: flex;
+            justify-content: center; /* centraliza horizontalmente */
+            align-items: flex-end; /* alinha na parte inferior */
+        }
+        .assinatura-container img {
+            height: 60px;
+            width: auto;
+            max-width: 100%; /* impede que ultrapasse o contêiner */
+            display: block;
+            filter: grayscale(100%) contrast(1.2);
+            opacity: 0.9;
+            pointer-events: none;
+            /* a imagem será centralizada pelo flexbox */
+        }
+        .linha-assinatura {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            border-top: 1.5px solid black;
+            z-index: 5;
+        }
+        .assinatura-texto {
+            margin-top: 5px;
+            display: block;
+        }
+        .nome-assinatura {
+            margin: 0;
+            font-weight: bold;
+            font-size: 10pt;
+            color: black;
+            text-transform: uppercase;
+        }
+        .cargo-assinatura {
+            margin: 2px 0 0 0;
+            font-size: 8pt;
+            color: #333;
+        }
+        .rodape {
+            margin-top: 8px;
+            text-align: center;
+            font-size: 6.5pt;
+            color: #666;
+            border-top: 1px solid #eee;
+            padding-top: 3px;
+            flex-shrink: 0;
+        }
+        .negrito {
+            font-weight: bold;
+        }
+        .lema {
+            text-align: center;
+            margin-top: 20px;
+            font-weight: bold;
+            font-style: italic;
+            color: #001f3f;
+            font-size: 9pt;
+        }
+    </style>
+</head>
+<body>
+    <div class="documento">
+
+        <!-- CABEÇALHO DO ESCRITÓRIO -->
+        <div class="cabecalho">
+            <div class="logo">
+                <img src="https://github.com/virgulinosantos/santos-e-associados/blob/main/imagens/S%26A.png?raw=true" alt="S&A Logo">
+            </div>
+            <div>
+                <h1>SANTOS <span>&</span> ASSOCIADOS</h1>
+                <p class="subtitulo">Advocacia Estratégica & Consultoria de Estado</p>
+                <div class="info-escritorio">
+                    CNPJ: 50.233.670/0001-26 | IE: 944.102.242.195 | OAB/SP 2026.001
+                </div>
+            </div>
+        </div>
+
+        <!-- TÍTULO DO INSTRUMENTO -->
+        <div class="titulo-documento">
+            <span>CONTRATO DE PRESTAÇÃO DE SERVIÇOS JURÍDICOS</span>
+        </div>
+
+        <!-- IDENTIFICAÇÃO DAS PARTES -->
+        <div class="corpo">
+            <p class="sem-recuo"><span class="negrito">CONTRATANTE:</span> BRAGA NETO ORLEANS DE BRAGANÇA, brasileiro, solteiro, delegado de polícia, portador do RG nº 70.385.572-2 SSP/SP, residente e domiciliado no Hotel Central, S/N, apto. 1, Bairro Pershing Square, São Paulo/SP.</p>
+            
+            <p><span class="negrito">CONTRATADA:</span> SANTOS & ASSOCIADOS SOCIEDADE DE ADVOGADOS, inscrita no CNPJ sob o nº 50.233.670/0001-26, com sede na Rodovia Interestadual 425 Leste, nº 425, Centro, São Paulo/SP, neste ato representada por seu sócio‑diretor, Dr. Virgulino Santos, inscrito na OAB/SP sob o nº 238.126.</p>
+
+            <p>As partes têm, entre si, justo e contratado o seguinte:</p>
+
+            <!-- CLÁUSULAS -->
+            <p class="sem-recuo">CLÁUSULA PRIMEIRA – DO OBJETO</p>
+            <p>1.1. O presente contrato tem por objeto a prestação, pela CONTRATADA, de serviços advocatícios especializados visando à propositura e ao patrocínio de <span class="negrito">AÇÃO DE COBRANÇA DE VERBAS REMUNERATÓRIAS</span> em face do <span class="negrito">ESTADO DE SÃO PAULO</span>, pessoa jurídica de direito público interno, em razão da ausência de pagamento do subsídio devido ao CONTRATANTE pelos serviços prestados no cargo de Delegado Titular da 3ª Delegacia de Polícia (3DP), referente ao período de 03 (três) semanas consecutivas, conforme fatos e documentos que instruem a petição inicial.</p>
+            <p>1.2. O valor total estimado da causa é de <span class="negrito">R$ 178.050,00 (cento e setenta e oito mil e cinquenta reais)</span>, correspondente a 03 (três) vezes o subsídio semanal do CONTRATANTE (R$ 59.350,00 cada), sem prejuízo de atualização monetária, juros e eventuais verbas acessórias.</p>
+            <p>1.3. A CONTRATADA compromete-se a empregar toda a diligência e técnica para defender os interesses do CONTRATANTE, utilizando os meios legais cabíveis, inclusive recursos administrativos e judiciais, sempre no intuito de obter a satisfação do crédito.</p>
+
+            <p class="sem-recuo">CLÁUSULA SEGUNDA – DOS HONORÁRIOS ADVOCATÍCIOS</p>
+            <p>2.1. Pelos serviços ora contratados, o CONTRATANTE pagará à CONTRATADA:</p>
+            <p class="numeracao"><span class="negrito">2.1.1. Honorários contratuais (taxa de consulta e auditoria):</span> o valor fixo de <span class="negrito">R$ 30.000,00 (trinta mil reais)</span>, que deverá ser pago no ato da assinatura deste instrumento, mediante depósito em conta bancária indicada pela CONTRATADA ou em dinheiro, contra recibo. Tais honorários remuneram a análise preliminar, a elaboração da petição inicial, a coleta de provas e o primeiro atendimento consultivo.</p>
+            <p class="numeracao"><span class="negrito">2.1.2. Honorários de êxito (sucumbenciais contratuais):</span> o percentual de <span class="negrito">20% (vinte por cento) sobre o valor bruto de qualquer proveito econômico obtido em favor do CONTRATANTE</span>, seja por meio de sentença judicial condenatória, transação, acordo judicial ou extrajudicial, ou qualquer outra forma de composição que implique recebimento de valores. Incluem‑se nessa base de cálculo o principal, correção monetária, juros, multas e demais acréscimos. O pagamento será devido ao final do processo, tão logo os valores sejam disponibilizados ao CONTRATANTE, autorizando‑se, desde já, que a CONTRATADA receba diretamente o montante correspondente, mediante desconto do total a ser levantado ou transferido.</p>
+            <p>2.2. Fica expressamente ajustado que os honorários de sucumbência fixados pelo juízo em favor da CONTRATADA (honorários sucumbenciais) pertencem exclusivamente à CONTRATADA, nos termos do art. 85 do Código de Processo Civil e do art. 23 do Estatuto da OAB, não sendo tais valores compensados com os honorários contratuais ou de êxito ora pactuados.</p>
+            <p>2.3. Em caso de desistência da ação por iniciativa do CONTRATANTE antes do trânsito em julgado, ou de revogação do mandato sem justa causa, serão devidos à CONTRATADA os honorários contratuais proporcionais ao trabalho realizado e, se houver condenação em honorários sucumbenciais, estes serão igualmente devidos.</p>
+
+            <p class="sem-recuo">CLÁUSULA TERCEIRA – DAS OBRIGAÇÕES DA CONTRATADA</p>
+            <p>3.1. A CONTRATADA obriga-se a:</p>
+            <p class="numeracao">a) Prestar os serviços com zelo, diligência e estrita observância das normas legais e éticas;</p>
+            <p class="numeracao">b) Manter o CONTRATANTE informado sobre o andamento da causa, prestando contas sempre que solicitado;</p>
+            <p class="numeracao">c) Guardar sigilo profissional absoluto sobre todos os fatos e documentos a que tiver acesso em razão do exercício profissional;</p>
+            <p class="numeracao">d) Restituir ao CONTRATANTE, ao final do mandato, todos os documentos e valores que não sejam relativos aos seus honorários.</p>
+
+            <p class="sem-recuo">CLÁUSULA QUARTA – DAS OBRIGAÇÕES DO CONTRATANTE</p>
+            <p>4.1. O CONTRATANTE obriga-se a:</p>
+            <p class="numeracao">a) Fornecer à CONTRATADA todos os documentos, informações e provas necessárias ao bom andamento do processo;</p>
+            <p class="numeracao">b) Comparecer a atos judiciais e extrajudiciais sempre que convocado;</p>
+            <p class="numeracao">c) Efetuar pontualmente o pagamento dos honorários nos prazos ajustados;</p>
+            <p class="numeracao">d) Manter a CONTRATADA informada sobre qualquer alteração de endereço, telefone ou e-mail.</p>
+
+            <p class="sem-recuo">CLÁUSULA QUINTA – DA RESCISÃO</p>
+            <p>5.1. O presente contrato poderá ser rescindido por qualquer das partes, mediante notificação prévia de 30 (trinta) dias, ressalvados os honorários devidos até a data da rescisão.</p>
+            <p>5.2. A rescisão imotivada por parte do CONTRATANTE, antes da conclusão do processo, não o exime do pagamento dos honorários contratuais já vencidos e dos honorários de êxito que seriam devidos na hipótese de êxito futuro, calculados com base no valor estimado da causa ou no proveito econômico efetivamente obtido até a data da rescisão.</p>
+
+            <p class="sem-recuo">CLÁUSULA SEXTA – DA CONFIDENCIALIDADE</p>
+            <p>6.1. Ambas as partes se obrigam a manter absoluta confidencialidade sobre todas as informações estratégicas, documentos e comunicações trocadas, sob pena de responderem por perdas e danos.</p>
+
+            <p class="sem-recuo">CLÁUSULA SÉTIMA – DO FORO</p>
+            <p>7.1. As partes elegem o foro da Comarca de São Paulo/SP para dirimir quaisquer controvérsias oriundas deste contrato, com renúncia expressa a qualquer outro, por mais privilegiado que seja.</p>
+
+            <p class="sem-recuo">CLÁUSULA OITAVA – DISPOSIÇÕES GERAIS</p>
+            <p>8.1. A tolerância de qualquer das partes quanto ao descumprimento de qualquer cláusula não constituirá novação nem precedente para futuras infrações.</p>
+            <p>8.2. O presente contrato é firmado em caráter irretratável e irrevogável, obrigando as partes, seus herdeiros e sucessores.</p>
+        </div>
+
+        <!-- LOCAL E DATA -->
+        <div class="data-final">
+            <p>São Paulo, 16 de março de 2026.</p>
+        </div>
+
+        <!-- ASSINATURA DO CONTRATANTE (CENTRALIZADA) -->
+        <div class="assinatura-area">
+            <div class="assinatura-container">
+                <img src="https://github.com/virgulinosantos/santos-e-associados/blob/main/imagens/assinatura_braga.png?raw=true" alt="Assinatura de Braga Neto">
+                <div class="linha-assinatura"></div>
+            </div>
+            <div class="assinatura-texto">
+                <p class="nome-assinatura">BRAGA NETO ORLEANS DE BRAGANÇA</p>
+                <p class="cargo-assinatura">Contratante</p>
+            </div>
+        </div>
+
+        <!-- ASSINATURA DO ADVOGADO (CENTRALIZADA) -->
+        <div class="assinatura-area">
+            <div class="assinatura-container">
+                <img src="https://github.com/virgulinosantos/santos-e-associados/blob/main/imagens/assinatura_virgulino.png?raw=true" alt="Assinatura de Virgulino Santos">
+                <div class="linha-assinatura"></div>
+            </div>
+            <div class="assinatura-texto">
+                <p class="nome-assinatura">VIRGULINO SANTOS</p>
+                <p class="cargo-assinatura">OAB/SP 238.126</p>
+            </div>
+        </div>
+
+        <!-- LEMA -->
+        <div class="lema">
+            “Prudentia, Justitia et Potentia.”
+        </div>
+
+        <!-- RODAPÉ -->
+        <div class="rodape">
+            SANTOS & ASSOCIADOS | Rodovia Interestadual 425 Leste, 425, Centro – São Paulo/SP | contato@santosassociados.rp
+        </div>
+
+    </div>
+</body>
+</html>

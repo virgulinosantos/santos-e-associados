@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petição Inicial – Ação de Cobrança com Tutela de Urgência</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            font-family: 'Times New Roman', serif;
+            padding: 0;
+        }
+        .documento {
+            background-color: white;
+            color: black;
+            width: 210mm;
+            min-height: 297mm;
+            padding: 2.2cm 2cm 1.5cm 3cm;
+            margin: 0 auto;
+            text-align: justify;
+            line-height: 1.3;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            border: none;
+        }
+        .cabecalho {
+            text-align: center;
+            border-bottom: 1.5px solid #c5a059;
+            padding-bottom: 6px;
+            margin-bottom: 15px;
+            flex-shrink: 0;
+        }
+        .logo {
+            margin-bottom: -35px;
+        }
+        .logo img {
+            width: 170px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            border: none;
+        }
+        h1 {
+            margin: 0;
+            font-size: 20pt;
+            letter-spacing: 3px;
+            font-weight: 400;
+            color: #001f3f;
+            text-transform: uppercase;
+            font-family: 'Cinzel', serif;
+        }
+        h1 span {
+            color: #c5a059;
+        }
+        .subtitulo {
+            margin: 2px 0;
+            font-size: 9pt;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            color: #666;
+            font-weight: bold;
+        }
+        .info-escritorio {
+            margin-top: 3px;
+            font-size: 7.5pt;
+            color: #999;
+            letter-spacing: 1px;
+            font-weight: bold;
+        }
+        .enderecamento {
+            margin: 20px 0 20px 0;
+            font-size: 11pt;
+            line-height: 1.6;
+        }
+        .enderecamento p {
+            margin: 2px 0;
+            text-indent: 0;
+        }
+        .titulo-documento {
+            text-align: center;
+            margin: 20px 0 25px 0;
+            flex-shrink: 0;
+        }
+        .titulo-documento span {
+            font-size: 13pt;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            border-bottom: 2px solid black;
+            padding-bottom: 2px;
+        }
+        .corpo {
+            font-size: 10.5pt;
+            color: black;
+            flex-grow: 1;
+        }
+        .corpo p {
+            margin: 0 0 6px 0;
+            text-indent: 1.25cm;
+        }
+        .corpo p.sem-recuo {
+            text-indent: 0;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+        .numeracao {
+            margin-left: 1cm;
+            text-indent: 0;
+        }
+        .data-final {
+            text-align: center;
+            margin: 30px 0 20px 0;
+            font-size: 10.5pt;
+        }
+        .data-final p {
+            margin: 2px 0;
+            text-indent: 0;
+        }
+        .assinatura-area {
+            width: 280px;
+            margin: 5px auto 20px;
+            text-align: center;
+            flex-shrink: 0;
+        }
+        .assinatura-container {
+            position: relative;
+            height: 40px;
+            width: 100%;
+        }
+        .assinatura-container img {
+            height: 65px;
+            width: auto;
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 10;
+            filter: grayscale(100%) contrast(1.2);
+            opacity: 0.9;
+            pointer-events: none;
+        }
+        .linha-assinatura {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            border-top: 1.5px solid black;
+            z-index: 5;
+        }
+        .assinatura-texto {
+            margin-top: 5px;
+            display: block;
+        }
+        .nome-assinatura {
+            margin: 0;
+            font-weight: bold;
+            font-size: 11pt;
+            color: black;
+            text-transform: uppercase;
+        }
+        .cargo-assinatura {
+            margin: 2px 0 0 0;
+            font-size: 8.5pt;
+            color: #333;
+        }
+        .rodape {
+            margin-top: 8px;
+            text-align: center;
+            font-size: 7pt;
+            color: #666;
+            border-top: 1px solid #eee;
+            padding-top: 3px;
+            flex-shrink: 0;
+        }
+        .negrito {
+            font-weight: bold;
+        }
+        .destaque {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        .citacao {
+            font-style: italic;
+            margin-left: 2cm;
+            font-size: 10pt;
+        }
+    </style>
+</head>
+<body>
+    <div class="documento">
+
+        <!-- CABEÇALHO DO ESCRITÓRIO -->
+        <div class="cabecalho">
+            <div class="logo">
+                <img src="https://github.com/virgulinosantos/santos-e-associados/blob/main/imagens/S%26A.png?raw=true" alt="S&A Logo">
+            </div>
+            <div>
+                <h1>SANTOS <span>&</span> ASSOCIADOS</h1>
+                <p class="subtitulo">Advocacia Estratégica & Consultoria de Estado</p>
+                <div class="info-escritorio">
+                    CNPJ: 50.233.670/0001-26 | OAB/SP 2026.001
+                </div>
+            </div>
+        </div>
+
+        <!-- ENDEREÇAMENTO AO JUÍZO -->
+        <div class="enderecamento">
+            <p style="font-weight: bold;">EXCELENTÍSSIMO SENHOR DOUTOR JUIZ DE DIREITO DA 2ª VARA CÍVEL DA COMARCA DE SÃO PAULO – SP</p>
+        </div>
+
+        <!-- IDENTIFICAÇÃO DAS PARTES -->
+        <div class="corpo">
+            <p class="sem-recuo"><span class="negrito">BRAGA NETO ORLEANS DE BRAGANÇA</span>, brasileiro, solteiro, ex-Delegado de Polícia, portador do RG nº 70.385.572-2 SSP/SP, residente e domiciliado no Hotel Central, S/N, apto. 1, Bairro Pershing Square, São Paulo/SP, por seu advogado que esta subscreve (mandato anexo – procuração), com escritório na Rodovia Interestadual 425 Leste, nº 425, Centro, São Paulo/SP, onde recebe intimações, vem, respeitosamente, à presença de Vossa Excelência propor a presente</p>
+        </div>
+
+        <!-- TÍTULO DA AÇÃO -->
+        <div class="titulo-documento">
+            <span>AÇÃO DE COBRANÇA DE VERBAS REMUNERATÓRIAS C/C TUTELA DE URGÊNCIA</span>
+        </div>
+
+        <div class="corpo">
+            <p class="sem-recuo" style="margin-top: 0;">em face do <span class="negrito">ESTADO DE SÃO PAULO</span>, pessoa jurídica de direito público interno, inscrito no CNPJ sob o nº 46.379.400/0001-50, com sede no Palácio dos Bandeirantes, Av. Morumbi, nº 4.500, Portão 2, Morumbi, São Paulo/SP, CEP 05650-000, representado por sua Procuradoria Geral do Estado, pelos fatos e fundamentos a seguir expostos:</p>
+
+            <p class="sem-recuo">I – DOS FATOS</p>
+            <p>O Autor foi servidor público estadual, ocupante do cargo efetivo de Delegado de Polícia, tendo sido regularmente investido no cargo por meio de ato de nomeação publicado no Diário Oficial do Estado, conforme documentação anexa.</p>
+            <p>No exercício regular de suas funções, o Autor atuou como Delegado Titular da 3ª Delegacia de Polícia (3DP) durante o período de 03 (três) semanas consecutivas, compreendidas entre os dias 13/02/2026 a 06/03/2026, cumprindo integralmente sua jornada de trabalho, plantões e demais obrigações funcionais.</p>
+            <p>Ocorre que, transcorrido o período aquisitivo, a Administração Pública ré <span class="negrito">deixou de efetuar o pagamento do subsídio devido</span> referente a estas três semanas de trabalho, violando direito líquido e certo do Autor, bem como os princípios basilares da administração pública.</p>
+            <p>O subsídio semanal do Autor é de R$ 59.350,00 (cinquenta e nove mil trezentos e cinquenta reais), conforme contracheques anexos, totalizando o valor de <span class="negrito">R$ 178.050,00 (cento e setenta e oito mil e cinquenta reais)</span> referente ao período não pago.</p>
+            <p><span class="negrito">Diante da absoluta falta de pagamento e da completa omissão da Administração em regularizar a situação, o Autor viu-se compelido a requerer sua exoneração do cargo público</span>, conforme documento anexo, uma vez que lhe era impossível manter-se financeiramente sem receber sua remuneração, verba de natureza alimentar. A exoneração foi motivada exclusivamente pela inadimplência do Estado, que, ao deixar de pagar o subsídio, forçou o Autor a abandonar a carreira pública.</p>
+            <p>O Autor possui provas robustas da prestação dos serviços: (i) ato de nomeação; (ii) registros fotográficos do período trabalhado; (iii) testemunhas que serão oportunamente arroladas; (iv) pedido de exoneração que comprova a motivação. Apesar de ter procurado a administração para solucionar a pendência de forma amigável, o pagamento não foi regularizado, encontrando-se a dívida em mora.</p>
+
+            <p class="sem-recuo">II – DA TUTELA DE URGÊNCIA (art. 300 do CPC)</p>
+            <p>Presentes os requisitos legais, requer-se a concessão de <span class="negrito">tutela de urgência antecipada</span>, em caráter liminar e inaudita altera pars, para determinar que o Estado de São Paulo proceda ao pagamento imediato dos valores devidos ao Autor, nos seguintes fundamentos:</p>
+            
+            <p><span class="negrito">a) Probabilidade do direito</span></p>
+            <p>A prova é inequívoca e robusta: (i) ato de nomeação que comprova o vínculo; (ii) registros fotográficos do Autor no exercício das funções durante o período não pago; (iii) contracheques que demonstram o valor do subsídio; (iv) pedido de exoneração motivado pela falta de pagamento. Todos os documentos estão acostados à inicial. A jurisprudência é pacífica no sentido de que o serviço prestado gera direito à contraprestação pecuniária, sob pena de enriquecimento ilícito da Administração (art. 884 do Código Civil).</p>
+            
+            <p><span class="negrito">b) Perigo de dano ou risco ao resultado útil do processo</span></p>
+            <p>Os valores pleiteados possuem <span class="negrito">natureza alimentar</span>, destinando-se à subsistência do Autor e sua família. O Autor, por não ter recebido sua remuneração por três semanas, viu-se obrigado a pedir exoneração do cargo público, encontrando-se atualmente em situação de vulnerabilidade financeira. A demora no pagamento compromete sua dignidade, sua sobrevivência e viola o princípio da continuidade do serviço público. Ademais, o fato de o Autor já ter se exonerado agrava o perigo de dano, pois não há mais vínculo que possa gerar expectativa de pagamento espontâneo pela Administração.</p>
+            
+            <p><span class="negrito">c) Reversibilidade da medida</span></p>
+            <p>A medida é plenamente reversível, pois, se ao final a ação for julgada improcedente, o Autor poderá restituir os valores recebidos, devidamente corrigidos, nos termos do art. 300, §3º, do CPC. Trata-se de valores em dinheiro, perfeitamente restituíveis.</p>
+            
+            <p><span class="negrito">d) Inexistência de perigo de irreversibilidade</span></p>
+            <p>Não há qualquer risco de irreversibilidade para a Fazenda Pública, que possui mecanismos de recuperação de crédito e, em caso de improcedência, poderá executar o Autor para devolução dos valores. O Estado não sofrerá dano de difícil reparação, ao passo que o Autor, sem o recebimento, terá sua subsistência comprometida.</p>
+            
+            <p class="citacao">"A tutela de urgência será concedida quando houver elementos que evidenciem a probabilidade do direito e o perigo de dano ou o risco ao resultado útil do processo." (art. 300, caput, do CPC)</p>
+            
+            <p>Diante do exposto, requer-se a concessão de tutela de urgência para determinar que o Estado de São Paulo efetue o pagamento imediato de <span class="negrito">R$ 178.050,00 (cento e setenta e oito mil e cinquenta reais)</span>, no prazo de 48 horas, sob pena de bloqueio de valores via sistema BacenJud ou outras medidas coercitivas.</p>
+
+            <p class="sem-recuo">III – DO DIREITO</p>
+            <p><span class="negrito">3.1. Da natureza jurídica do subsídio e do dever de pagar</span></p>
+            <p>O subsídio do Delegado de Polícia é a contraprestação pecuniária paga pelos cofres públicos ao servidor que exerce o cargo, nos termos do art. 39, §4º da Constituição Federal, que estabelece que os membros das polícias civis serão remunerados exclusivamente por subsídio fixado em parcela única. Trata-se de direito subjetivo do servidor, com natureza jurídica de verba alimentar.</p>
+            <p>A Constituição Federal, em seu art. 37, X, assegura a revisão geral da remuneração e o pagamento pontual dos vencimentos. A retenção indevida fere os princípios da moralidade e da legalidade administrativa.</p>
+            <p>Uma vez prestado o serviço, nasce para o servidor o direito à percepção do subsídio, e para a Administração o dever de pagá-lo. A ausência de pagamento configura <span class="negrito">enriquecimento sem causa da Administração Pública</span>, vedado pelo art. 884 do Código Civil, que determina a restituição daquilo que se recebeu sem causa.</p>
+            <p>A exoneração do Autor, motivada pela inadimplência estatal, constitui dano moral e material adicional, pois o servidor foi compelido a abandonar sua carreira em razão da omissão do Estado.</p>
+
+            <p><span class="negrito">3.2. Da mora e dos acréscimos legais</span></p>
+            <p>Os valores devidos ao Autor, por possuírem natureza alimentar, devem ser pagos com correção monetária e juros de mora. Para as condenações impostas à Fazenda Pública, a correção monetária deve observar o IPCA-E (índice de Preços ao Consumidor Amplo Especial), conforme decidido pelo Supremo Tribunal Federal nas ADIs 4.357 e 4.425, e os juros de mora devem ser calculados com base no índice de remuneração da caderneta de poupança, nos termos do art. 1º-F da Lei 9.494/97, com redação dada pela Lei 11.960/2009, observada a modulação de efeitos determinada pelo STF.</p>
+            <p>Considerando que o pagamento do subsídio deveria ocorrer ao final de cada semana trabalhada, nos termos da legislação estadual aplicável aos servidores públicos, incide mora a partir do vencimento de cada parcela não paga.</p>
+
+            <p><span class="negrito">3.3. Da competência</span></p>
+            <p>O art. 52, parágrafo único, do Código de Processo Civil estabelece que, nas ações em que o Estado for demandado, o autor poderá propor a ação no foro de seu domicílio, no de ocorrência do ato ou fato que originou a demanda, no de situação da coisa ou na capital do respectivo ente federado. O Autor é domiciliado na Capital, razão pela qual é competente este Juízo.</p>
+
+            <p class="sem-recuo">IV – DOS PEDIDOS</p>
+            <p>Diante do exposto, requer a Vossa Excelência:</p>
+            <p class="numeracao">a) A concessão da <span class="negrito">TUTELA DE URGÊNCIA</span>, inaudita altera pars, para determinar que o Estado de São Paulo efetue o pagamento imediato de <span class="negrito">R$ 178.050,00 (cento e setenta e oito mil e cinquenta reais)</span>, no prazo de 48 horas, sob pena de bloqueio de valores via sistema BacenJud ou multa diária a ser arbitrada por este Juízo;</p>
+            <p class="numeracao">b) A <span class="negrito">CITAÇÃO</span> da ré, na pessoa de seu representante legal (Procurador Geral do Estado de São Paulo), para, querendo, contestar a presente ação no prazo legal, sob pena de revelia;</p>
+            <p class="numeracao">c) A <span class="negrito">PROCEDÊNCIA TOTAL DA AÇÃO</span> para condenar a ré ao pagamento dos valores referentes às 03 (três) semanas de subsídio não pagas ao Autor, no valor de <span class="negrito">R$ 178.050,00 (cento e setenta e oito mil e cinquenta reais)</span>, devidamente corrigidos monetariamente (IPCA-E) e acrescidos de juros de mora (índice da caderneta de poupança) desde o vencimento de cada parcela até a data do efetivo pagamento;</p>
+            <p class="numeracao">d) A condenação da ré ao pagamento de <span class="negrito">custas processuais e honorários advocatícios sucumbenciais</span>, estes a serem fixados em <span class="negrito">20% (vinte por cento) sobre o valor da condenação</span>, nos termos do art. 85, §3º, I, do Código de Processo Civil;</p>
+            <p class="numeracao">e) A <span class="negrito">produção de todos os meios de prova</span> em direito admitidos, especialmente a juntada de novos documentos, o depoimento pessoal do representante legal da ré, e a oitiva das testemunhas abaixo arroladas, que confirmarão a prestação de serviço e a falta de pagamento.</p>
+
+            <p class="sem-recuo">V – DAS PROVAS</p>
+            <p>O Autor protesta provar o alegado por todos os meios de prova em direito admitidos, especialmente:</p>
+            <p class="numeracao">- Documental: ato de nomeação, registros fotográficos, contracheques, pedido de exoneração;</p>
+            <p class="numeracao">- Testemunhal: rol de testemunhas a ser oportunamente apresentado;</p>
+            <p class="numeracao">- Depoimento pessoal do representante legal da ré.</p>
+
+            <p class="sem-recuo">VI – DO VALOR DA CAUSA</p>
+            <p>Dá-se à causa o valor de <span class="negrito">R$ 178.050,00 (cento e setenta e oito mil e cinquenta reais)</span>.</p>
+
+            <p class="sem-recuo" style="margin-top: 20px;">Nestes termos, pede deferimento.</p>
+        </div>
+
+        <!-- DATA -->
+        <div class="data-final">
+            <p>São Paulo, 17 de março de 2026.</p>
+        </div>
+
+        <!-- ASSINATURA DO ADVOGADO -->
+        <div class="assinatura-area">
+            <div class="assinatura-container">
+                <img src="https://github.com/virgulinosantos/santos-e-associados/blob/main/imagens/assinatura_virgulino.png?raw=true" alt="Assinatura">
+                <div class="linha-assinatura"></div>
+            </div>
+            <div class="assinatura-texto">
+                <p class="nome-assinatura">VIRGULINO SANTOS</p>
+                <p class="cargo-assinatura">OAB/SP 238.126</p>
+            </div>
+        </div>
+
+        <!-- ROL DE TESTEMUNHAS (em branco para preenchimento) -->
+        <div style="margin-top: 30px; font-size: 10pt;">
+            <p class="negrito" style="text-indent: 0;">ROL DE TESTEMUNHAS (a serem oportunamente arroladas):</p>
+            <p style="text-indent: 0; margin-left: 1cm;">1. _________________________________________________</p>
+            <p style="text-indent: 0; margin-left: 1cm;">2. _________________________________________________</p>
+            <p style="text-indent: 0; margin-left: 1cm;">3. _________________________________________________</p>
+        </div>
+
+        <!-- RODAPÉ -->
+        <div class="rodape">
+            SANTOS & ASSOCIADOS | Rodovia Interestadual 425 Leste, 425, Centro – São Paulo/SP | contato@santosassociados.rp
+        </div>
+
+    </div>
+</body>
+</html>

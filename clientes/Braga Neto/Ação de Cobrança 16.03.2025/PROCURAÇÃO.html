@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procuração – Braga Neto Orleans de Bragança</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            font-family: 'Times New Roman', serif;
+            padding: 0;
+        }
+        .documento {
+            background-color: white;
+            color: black;
+            width: 210mm;
+            min-height: 297mm;
+            padding: 2.2cm 2cm 1.5cm 3cm;
+            margin: 0 auto;
+            text-align: justify;
+            line-height: 1.3;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            border: none;
+        }
+        .cabecalho {
+            text-align: center;
+            border-bottom: 1.5px solid #c5a059;
+            padding-bottom: 6px;
+            margin-bottom: 15px;
+            flex-shrink: 0;
+        }
+        .logo {
+            margin-bottom: -35px;
+        }
+        .logo img {
+            width: 170px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            border: none;
+        }
+        h1 {
+            margin: 0;
+            font-size: 20pt;
+            letter-spacing: 3px;
+            font-weight: 400;
+            color: #001f3f;
+            text-transform: uppercase;
+            font-family: 'Cinzel', serif;
+        }
+        h1 span {
+            color: #c5a059;
+        }
+        .subtitulo {
+            margin: 2px 0;
+            font-size: 9pt;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            color: #666;
+            font-weight: bold;
+        }
+        .info-escritorio {
+            margin-top: 3px;
+            font-size: 7.5pt;
+            color: #999;
+            letter-spacing: 1px;
+            font-weight: bold;
+        }
+        .titulo-documento {
+            text-align: center;
+            margin-bottom: 15px;
+            flex-shrink: 0;
+        }
+        .titulo-documento span {
+            font-size: 13pt;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            border-bottom: 2px solid black;
+            padding-bottom: 2px;
+        }
+        .corpo {
+            font-size: 10.5pt;
+            color: black;
+            flex-grow: 1;
+            margin-bottom: 5px;
+        }
+        .corpo p {
+            margin: 0 0 5px 0;
+            text-indent: 1.25cm;
+        }
+        .corpo p.sem-recuo {
+            text-indent: 0;
+        }
+        .data-final {
+            text-align: center;
+            margin-top: 5px;
+            font-size: 10.5pt;
+        }
+        .data-final p {
+            margin: 2px 0;
+            text-indent: 0;
+        }
+        .assinatura-area {
+            width: 280px;
+            margin: 5px auto 0;
+            text-align: center;
+            flex-shrink: 0;
+        }
+        .assinatura-container {
+            position: relative;
+            height: 50px; /* aumentado para acomodar assinatura maior */
+            width: 100%;
+        }
+        .assinatura-container img {
+            height: 80px; /* aumentado para 80px */
+            width: auto;
+            position: absolute;
+            bottom: -5px;
+            right: 0; /* alinhado à direita */
+            z-index: 10;
+            filter: grayscale(100%) contrast(1.2);
+            opacity: 0.9;
+            pointer-events: none;
+        }
+        .linha-assinatura {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            border-top: 1.5px solid black;
+            z-index: 5;
+        }
+        .assinatura-texto {
+            margin-top: 5px;
+            display: block;
+        }
+        .nome-assinatura {
+            margin: 0;
+            font-weight: bold;
+            font-size: 11pt;
+            color: black;
+            text-transform: uppercase;
+        }
+        .cargo-assinatura {
+            margin: 2px 0 0 0;
+            font-size: 8.5pt;
+            color: #333;
+        }
+        .rodape {
+            margin-top: 8px;
+            text-align: center;
+            font-size: 7pt;
+            color: #666;
+            border-top: 1px solid #eee;
+            padding-top: 3px;
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="documento">
+
+        <!-- CABEÇALHO -->
+        <div class="cabecalho">
+            <div class="logo">
+                <img src="https://github.com/virgulinosantos/santos-e-associados/blob/main/imagens/S%26A.png?raw=true" alt="S&A Logo">
+            </div>
+            <div>
+                <h1>SANTOS <span>&</span> ASSOCIADOS</h1>
+                <p class="subtitulo">Advocacia Estratégica & Consultoria de Estado</p>
+                <div class="info-escritorio">
+                    CNPJ: 50.233.670/0001-26 | IE: 944.102.242.195 | OAB/SP 2026.001
+                </div>
+            </div>
+        </div>
+
+        <!-- TÍTULO -->
+        <div class="titulo-documento">
+            <span>PROCURAÇÃO AD JUDICIA ET EXTRA</span>
+        </div>
+
+        <!-- CORPO -->
+        <div class="corpo">
+            <p class="sem-recuo"><strong>OUTORGANTE:</strong> BRAGA NETO ORLEANS DE BRAGANÇA, brasileiro, solteiro, delegado de polícia, portador do RG nº 70.385.572-2 SSP/SP, residente e domiciliado no Hotel Central, S/N, apto. 1, Bairro Pershing Square, São Paulo/SP.</p>
+            
+            <p><strong>OUTORGADOS:</strong> VIRGULINO SANTOS, inscrito na OAB/SP sob o nº 238.126, e FABIO ARAUJO, inscrito na OAB/SP sob o nº 986.955, ambos sócios da SANTOS & ASSOCIADOS, com sede na Rodovia Interestadual 425 Leste, nº 425, Centro, São Paulo/SP.</p>
+
+            <p><strong>PODERES:</strong> Pelo presente instrumento, o OUTORGANTE nomeia e constitui os OUTORGADOS como seus bastantes procuradores, conferindo-lhes os poderes da cláusula <em>ad judicia et extra</em> para o foro em geral, com atuação perante qualquer juízo, tribunal ou órgão da administração pública federal, estadual ou municipal, especialmente nas esferas cível e fazendária.</p>
+
+            <p><strong>PODERES ESPECIAIS:</strong> Os mandatários possuem poderes específicos para propor e patrocinar <strong>AÇÃO DE COBRANÇA DE VERBAS REMUNERATÓRIAS</strong> em face do <strong>ESTADO DE SÃO PAULO</strong>, bem como atuar em todos os incidentes e recursos; produzir provas; requerer diligências; participar de audiências; confessar; desistir; transigir; firmar acordos judiciais ou extrajudiciais; receber valores, dar quitação; levantar alvarás; e praticar todos os atos necessários ao fiel cumprimento deste mandato, inclusive substabelecer esta procuração a outrem, com ou sem reservas de iguais poderes.</p>
+
+            <p><strong>FINALIDADE:</strong> Representação jurídica integral para a defesa dos interesses do outorgante na cobrança dos subsídios não pagos referentes ao período de 03 (três) semanas de trabalho no cargo de Delegado Titular da 3ª Delegacia de Polícia (3DP), conforme fatos narrados na petição inicial, bem como para a prática de todos os atos decorrentes dessa demanda.</p>
+        </div>
+
+        <!-- DATA E FRASE -->
+        <div class="data-final">
+            <p style="font-weight: bold; font-style: italic;">“Prudentia, Justitia et Potentia.”</p>
+            <p>São Paulo, 16 de março de 2026.</p>
+        </div>
+
+        <!-- ASSINATURA DO OUTORGANTE (AGORA MAIOR E À DIREITA) -->
+        <div class="assinatura-area">
+            <div class="assinatura-container">
+                <img src="https://github.com/virgulinosantos/santos-e-associados/blob/main/imagens/assinatura_braga.png?raw=true" alt="Assinatura de Braga Neto">
+                <div class="linha-assinatura"></div>
+            </div>
+            <div class="assinatura-texto">
+                <p class="nome-assinatura">BRAGA NETO ORLEANS DE BRAGANÇA</p>
+                <p class="cargo-assinatura">Outorgante</p>
+            </div>
+        </div>
+
+        <!-- RODAPÉ -->
+        <div class="rodape">
+            SANTOS & ASSOCIADOS | Rodovia Interestadual 425 Leste, 425, Centro – São Paulo/SP
+        </div>
+
+    </div>
+</body>
+</html>

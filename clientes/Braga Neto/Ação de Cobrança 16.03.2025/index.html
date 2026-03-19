@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santos & Associados – Documentos do Caso</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: 'Times New Roman', serif;
+            padding: 20px;
+        }
+        .documento {
+            background-color: white;
+            color: black;
+            width: 210mm;
+            min-height: 297mm;
+            padding: 2cm;
+            margin: 0 auto;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: justify;
+            line-height: 1.3;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+        }
+        .cabecalho {
+            text-align: center;
+            border-bottom: 2px solid #c5a059;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        .logo {
+            margin-bottom: -35px;
+        }
+        .logo img {
+            width: 180px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        h1 {
+            margin: 0;
+            font-size: 24pt;
+            letter-spacing: 4px;
+            font-weight: 400;
+            color: #001f3f;
+            text-transform: uppercase;
+            font-family: 'Cinzel', serif;
+        }
+        h1 span {
+            color: #c5a059;
+        }
+        .subtitulo {
+            margin: 5px 0;
+            font-size: 10pt;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            color: #666;
+            font-weight: bold;
+        }
+        .info-escritorio {
+            margin-top: 10px;
+            font-size: 8pt;
+            color: #999;
+            letter-spacing: 1px;
+            font-weight: bold;
+        }
+        .titulo-documento {
+            text-align: center;
+            margin: 30px 0 20px;
+        }
+        .titulo-documento span {
+            font-size: 16pt;
+            font-weight: bold;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            border-bottom: 2px solid black;
+            padding-bottom: 5px;
+        }
+        .info-caso {
+            background-color: #f8f8f8;
+            border-left: 4px solid #c5a059;
+            padding: 15px 20px;
+            margin-bottom: 30px;
+            font-size: 12pt;
+        }
+        .info-caso p {
+            margin: 5px 0;
+        }
+        .lista-documentos {
+            list-style: none;
+            margin-top: 20px;
+        }
+        .lista-documentos li {
+            margin: 20px 0;
+            font-size: 13pt;
+            border-bottom: 1px dashed #ccc;
+            padding-bottom: 10px;
+        }
+        .lista-documentos a {
+            display: block;
+            background-color: #001f3f;
+            color: white;
+            text-decoration: none;
+            padding: 12px 20px;
+            border-radius: 4px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: background-color 0.3s;
+            text-align: center;
+        }
+        .lista-documentos a:hover {
+            background-color: #c5a059;
+            color: #001f3f;
+        }
+        .descricao {
+            font-size: 11pt;
+            color: #333;
+            margin-top: 5px;
+            font-style: italic;
+            text-align: center;
+        }
+        .rodape {
+            margin-top: auto;
+            text-align: center;
+            font-size: 8pt;
+            color: #666;
+            border-top: 1px solid #eee;
+            padding-top: 10px;
+        }
+        .lema {
+            text-align: center;
+            margin: 30px 0 10px;
+            font-weight: bold;
+            font-style: italic;
+            color: #001f3f;
+            font-size: 11pt;
+        }
+    </style>
+</head>
+<body>
+    <div class="documento">
+
+        <!-- CABEÇALHO DO ESCRITÓRIO -->
+        <div class="cabecalho">
+            <div class="logo">
+                <img src="https://github.com/virgulinosantos/santos-e-associados/blob/main/imagens/S%26A.png?raw=true" alt="Santos & Associados">
+            </div>
+            <div>
+                <h1>SANTOS <span>&</span> ASSOCIADOS</h1>
+                <p class="subtitulo">ADVOCACIA ESTRATÉGICA & CONSULTORIA DE ESTADO</p>
+                <div class="info-escritorio">
+                    CNPJ: 50.233.670/0001-26 | OAB/SP 2026.001
+                </div>
+            </div>
+        </div>
+
+        <!-- TÍTULO DA PÁGINA -->
+        <div class="titulo-documento">
+            <span>DOCUMENTOS DO CASO</span>
+        </div>
+
+        <!-- INFORMAÇÕES DO CASO -->
+        <div class="info-caso">
+            <p><strong>Cliente:</strong> BRAGA NETO ORLEANS DE BRAGANÇA</p>
+            <p><strong>Advogado Responsável:</strong> Dr. Virgulino Santos (OAB/SP 238.126)</p>
+            <p><strong>Assunto:</strong> Ação de Cobrança de Verbas Remuneratórias c/c Tutela de Urgência</p>
+            <p><strong>Réu:</strong> Estado de São Paulo</p>
+            <p><strong>Valor da Causa:</strong> R$ 178.050,00</p>
+            <p><strong>Nº do Processo (simulado):</strong> 1023456-78.2026.8.26.0100</p>
+            <p><strong>Vara:</strong> 2ª Vara Cível da Comarca de São Paulo – Juiz Magote Filho</p>
+        </div>
+
+        <!-- LISTA DE DOCUMENTOS -->
+        <ul class="lista-documentos">
+            <li>
+                <a href="CONTRATO.html" target="_blank"> CONTRATO DE PRESTAÇÃO DE SERVIÇOS JURÍDICOS</a>
+                <div class="descricao">Instrumento contratual firmado entre o cliente e o escritório, com cláusulas de honorários e obrigações.</div>
+            </li>
+            <li>
+                <a href="PETIÇÃO.html" target="_blank"> PETIÇÃO INICIAL (AÇÃO DE COBRANÇA C/C TUTELA DE URGÊNCIA)</a>
+                <div class="descricao">Peça protocolada na 2ª Vara Cível, com pedido de pagamento imediato dos subsídios atrasados.</div>
+            </li>
+            <li>
+                <a href="PROCURAÇÃO.html" target="_blank"> PROCURAÇÃO AD JUDICIA ET EXTRA</a>
+                <div class="descricao">Instrumento de mandato outorgado pelo cliente aos advogados da banca.</div>
+            </li>
+        </ul>
+
+        <!-- LEMA E RODAPÉ -->
+        <div class="lema">
+            “Prudentia, Justitia et Potentia.”
+        </div>
+        <div class="rodape">
+            SANTOS & ASSOCIADOS | Rodovia Interestadual 425 Leste, 425, Centro – São Paulo/SP | contato@santosassociados.rp
+        </div>
+
+    </div>
+</body>
+</html>
